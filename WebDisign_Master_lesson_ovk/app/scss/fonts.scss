@@ -1,0 +1,21 @@
+@import "compass/css3";
+
+
+@include font-face(
+	"roboto",
+	inline-font-files(
+		"RobotoRegular/RobotoRegular.woff", woff,
+		"RobotoRegular/RobotoRegular.ttf", ttf),
+	"RobotoRegular/RobotoRegular.eot",
+	normal,
+	normal
+);
+@include font-face(
+	"roboto bold",
+	inline-font-files(
+		"RobotoBold/RobotoBold.woff", woff,
+		"RobotoBold/RobotoBold.ttf", ttf),
+	"RobotoBold/RobotoBold.eot",
+	bold,
+	normal
+);
