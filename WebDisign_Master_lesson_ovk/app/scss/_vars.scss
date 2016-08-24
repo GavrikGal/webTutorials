@@ -10,3 +10,7 @@ $blue: #414E5B;
 }
 
 $base-font-size: 14px;
+
+@mixin mt($time) {
+	transition: all $time ease;
+}
