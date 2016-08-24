@@ -19,3 +19,51 @@
 	bold,
 	normal
 );
+
+
+@include font-face(
+	"Exo2Bold",
+	inline-font-files(
+		"Exo2Bold/Exo2Bold.woff", woff,
+		"Exo2Bold/Exo2Bold.ttf", ttf),
+	"Exo2Bold/Exo2Bold.eot",
+	bold,
+	normal
+);
+
+@include font-face(
+	"Exo2Bold",
+	font-files(
+		"Exo2Bold/Exo2Bold.woff",
+		"Exo2Bold/Exo2Bold.ttf", 
+	  "Exo2Bold/Exo2Bold.eot")
+);
+
+@include font-face(
+	"OpenSansBold",
+	font-files(
+		"OpenSansBold/OpenSansBold.woff",
+		"OpenSansBold/OpenSansBold.ttf", 
+	  "OpenSansBold/OpenSansBold.eot")
+);
+@include font-face(
+	"OpenSansLight",
+	font-files(
+		"OpenSansLight/OpenSansLight.woff",
+		"OpenSansLight/OpenSansLight.ttf", 
+	  "OpenSansLight/OpenSansLight.eot")
+);
+@include font-face(
+	"OpenSansRegular",
+	font-files(
+		"OpenSansRegular/OpenSansRegular.woff",
+		"OpenSansRegular/OpenSansRegular.ttf", 
+	  "OpenSansRegular/OpenSansRegular.eot")
+);
+@include font-face(
+	"OpenSansSemiBold",
+	font-files(
+		"OpenSansSemiBold/OpenSansSemiBold.woff",
+		"OpenSansSemiBold/OpenSansSemiBold.ttf", 
+	  "OpenSansSemiBold/OpenSansSemiBold.eot")
+);

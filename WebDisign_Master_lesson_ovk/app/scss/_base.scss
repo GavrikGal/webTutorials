@@ -2,39 +2,65 @@
 @import "vars";
 
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #222;
 	opacity: 1;
 }
 
 *:-moz-placeholder {
-	color: #666;
+	color: #222;
 	opacity: 1;
 }
 
 *::-moz-placeholder {
-	color: #666;
+	color: #222;
 	opacity: 1;
 }
 
 *:-ms-input-placeholder {
-	color: #666;
+	color: #222;
 	opacity: 1;
 }
 
+
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	color: #666;
+	color: #222;
 }
 body input:required:valid,
 body textarea:required:valid {
-	color: #666;
+	color: #222;
 }
 
 body {
-	font-size: 16px;
+	font-size: $base-font-size;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
 	font-family: $default-font;
 	overflow-x: hidden;
+	color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "OpenSanasLight", sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: em(43px);
+}
+
+h2 {
+	font-size: em(34px);
+}
+
+h3, h4 {
+	font-family: "OpenSnsSemiBold", sans-serif;
+	text-transform: uppercase;
+	font-size: em(17px);
+}
+
+h2 {
+	font-size: em(15px);
 }

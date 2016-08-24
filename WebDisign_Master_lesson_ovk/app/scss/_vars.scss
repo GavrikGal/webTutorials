@@ -1,2 +1,12 @@
-$default-font: "roboto", sans-serif;
-$accent: orange;
+$default-font: "OpenSansRegular", sans-serif;
+$btn: #14B75A;
+$accent: #ECB124;
+$blue: #414E5B;
+
+
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}
+
+$base-font-size: 14px;
