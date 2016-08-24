@@ -1,9 +1,62 @@
 @import "compass/reset";
 @import "scss/vars";
 @import "scss/base";
+@import "libs/susy/sass/susy";
+@impotr "scss/libs";
+
+$susy: (
+	columns: 12,
+	// gutters: 1/4,
+	// container: 100%,
+	// math: fluid,
+	// gutter-position: outside,
+	global-box-sizing: border-box,
+	debug: (
+    image: show-columns,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
 
 //First screen styles
 
 .hidden {
 	display: none;
+}
+
+
+
+.main-head {
+	background-image: url("img/bg_top.jpg");
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.container {
+	@include container(1200px);
+}
+
+.mnu-line {
+	padding-top: 48px;
+	@include container;
+}
+
+.logo {
+	@include span(2);
+	display: block;
+	
+	img {
+		width: 100px;
+	}
+}
+
+.col-md-8 {
+	@include span(8);
+}
+
+.col-md-2 {
+	@include span(2);
+	@include last;
 }
