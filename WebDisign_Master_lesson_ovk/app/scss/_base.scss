@@ -43,24 +43,31 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "OpenSanasLight", sans-serif;
+	font-family: "OpenSansLight", sans-serif;
 	font-weight: normal;
 }
 
 h1 {
-	font-size: em(43px);
+	font-size: em(41px);
+	line-height: 1.2;
 }
 
 h2 {
-	font-size: em(34px);
+	font-size: em(32px);
 }
 
 h3, h4 {
 	font-family: "OpenSnsSemiBold", sans-serif;
 	text-transform: uppercase;
-	font-size: em(17px);
+	font-size: em(15px);
 }
 
 h2 {
-	font-size: em(15px);
+	font-size: em(13px);
+}
+
+a, button {
+	text-decoration: none;
+	color: $accent;
+	outline: none !important;
 }
